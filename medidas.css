@@ -1,0 +1,104 @@
+
+
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #f0f4f7;
+    margin: 0;
+    padding: 0;
+    font-size: 16px; 
+}
+
+
+#contenedor-principal {
+    width: 80vw;
+    
+    min-height: 100vh; 
+    
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.caja {
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.absoluta {
+    /* Ancho fijo de 400 píxeles */
+    width: 400px;
+    background-color: #e6f7ff;
+    
+    /* Fuente absoluta */
+    font-size: 14px; 
+}
+
+.pequena-cm {
+    /* Altura definida en centímetro (Absoluta) */
+    height: 1cm; 
+    width: 3cm;
+    background-color: #008cba;
+    color: white;
+    text-align: center;
+    line-height: 1cm; /* Centra verticalmente el texto */
+    margin-top: 10px;
+}
+
+/* ================================================ */
+/* UNIDADES RELATIVAS (em, %) */
+/* ================================================ */
+
+.relativa-fuente {
+    background-color: #fffbe6;
+    border-color: #ffc107;
+    
+    /* Establece un tamaño de fuente base de 18px para ver la relatividad de 'em' */
+    font-size: 18px; 
+}
+
+.texto-em {
+    /* 1.5 veces el tamaño del padre (.relativa-fuente), que es 18px */
+    font-size: 1.5em; 
+    color: #856404;
+}
+
+.relativa-padre {
+    background-color: #e6ffe6;
+    border-color: #28a745;
+    /* Ancho del 90% del contenedor padre (#contenedor-principal) */
+    width: 90%; 
+}
+
+.relativa-padre p {
+    /* El padding (margen interno) es el 5% del ancho del elemento padre (.relativa-padre) */
+    padding: 5%; 
+    background-color: #d4edda;
+}
+
+/* ================================================ */
+/* DEMOSTRACIÓN DE VIEWPORT (vw, vh) */
+/* ================================================ */
+
+.viewport-demo {
+    background-color: #f7e6ff;
+    border-color: #6f42c1;
+    text-align: center;
+    
+    /* Ancho: 50% del ancho de la ventana */
+    width: 50vw; 
+    
+    /* Altura: 20% de la altura de la ventana */
+    height: 20vh; 
+    
+    /* Los márgenes en la parte superior e inferior son 5% de la altura de la ventana */
+    margin: 5vh auto; 
+    
+    display: flex; /* Para centrar el contenido fácilmente */
+    align-items: center;
+    justify-content: center;
+}
