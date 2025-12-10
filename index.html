@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medida CSS</title>
+    <link rel="stylesheet" type="text/css" href="medidas.css">
+</head>
+<body>
+    
+    <div id="contenedor-principal">
+        
+        <h1 style="font-size: 24px;"> Unidades de Medida en CSS</h1> 
+        
+        <p>
+        Las diferentes unidades de medida utilizadas en CSS son : 
+        </p>
+
+        <div class="caja absoluta">
+            <h3>Unidades Absolutas (px, cm)</h3>
+            <p>
+                Esta caja tiene un ancho fijo de 400px y su texto usa una fuente de 14px. Estas medidas no cambian si el usuario hace zoom o cambia el tamaño de la pantalla.
+            </p>
+            <div class="pequena-cm">Altura de 1 cm</div>
+        </div>
+
+        <div class="caja relativa-fuente">
+            <h3>Unidades Relativas a la Fuente (em)</h3>
+            <p class="texto-em">
+                El tamaño de esta fuente es de **1.5em**. 
+            </p>
+        </div>
+
+        <div class="caja relativa-padre">
+            <h3>Unidades Relativas al Padre (%)</h3>
+            <p>
+                Este párrafo tiene un margen que ocupa el 5% del ancho de esta caja.
+            </p>
+        </div>
+
+        <div class="caja viewport-demo">
+            <h3>Unidades Viewport (vh, vw)</h3>
+            <p>
+                Este contenedor tiene una altura de 20vh  y un ancho de 50vw.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
